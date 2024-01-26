@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Fake Urgency Detector",
+    "version": "1.0",
+    "description": "Detects fake urgency on e-commerce websites.",
+    "permissions": ["activeTab"],
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "48": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
